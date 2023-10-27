@@ -1,0 +1,95 @@
+
+.movie_cards_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.movies_title{
+    font-size: var(--size-3xl);
+    color: var(--clr-slate400);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.movies_subtitle{
+    font-size: var(--size-2xl);
+    color: var(--clr-slate400);
+    margin-bottom: 3rem;
+}
+.movie_card{
+    cursor: pointer;
+    position:relative;
+    width: 280px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 20px;
+} 
+.movie_card:hover{
+    transform: scale(1.1);
+}
+.movie_card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.movie_card .movie_content{
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    bottom: 0;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 1;
+}
+.movie_card .movie_content::before{
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background: rgba(90, 87, 87, 0.3);
+    backdrop-filter: blur(3px);
+    border-radius: 0px 0px 20px 20px;
+    z-index: -1;
+}
+
+.movie_content h3{
+    color: #fff;
+    padding: 5px 0px 0px 10px;
+    font-size: 17px;
+}
+.movie_content p{
+    color: #fff;
+    padding: 0px 0px 5px 10px;
+    font-size: 13px;   
+}
+.movie_content h6{
+    color: #fff;
+    padding: 0px 0px 5px 10px;
+    font-size: 13px;   
+}
+.movie_content h6 span{
+    color: var(--clr-light);
+    background: var(--clr-rose);
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+/* xs */
+/* @media (min-width: 475px) {  } */
+/* sm */
+/* @media (min-width: 640px) {  } */
+/* md */
+@media (min-width: 768px) { 
+    .movie_cards_container{
+        height: fit-content;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-rows: repeat(auto-fit,420px);
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+ }
+/* lg */
+/* @media (min-width: 1024px) {  } */
+/* xl */
+/* @media (min-width: 1280px) {  } */
+/* 2xl */
+/* @media (min-width: 1536px) {  } */

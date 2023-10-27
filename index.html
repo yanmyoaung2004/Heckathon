@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles/modern-normalize.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/components/header.css">
+  <link rel="stylesheet" href="styles/components/mobile-nav.css">
+  <link rel="stylesheet" href="styles/components/movies.css">
+  <link rel="stylesheet" href="styles/components/seat.css">
+  <link rel="stylesheet" href="styles/components/live.css">
+  <link rel="stylesheet" href="styles/components/footer.css">
+  <link rel="stylesheet" href="styles/components/animation.css">
+  <link rel="stylesheet" href="styles/components/login.css">
+
+  <link rel="stylesheet" href="styles/utils.css">
+</head>
+<body>
+  
+  <header class="header container">
+    <div class="logo">
+      <h3>Cinema YMA</h3>
+    </div>
+    <nav>
+      <ul class="header__menu">
+        <li><a href="#movies" class="header__link">Movies</a></li>
+        <li><a href="seat.html" class="header__link">Tickets</a></li>
+        <li>
+          <div class="search_user">
+            <input type="text" name="search" id="search_input" placeholder="Search...">
+          </div>
+          <div class="search" id="seen">
+          </div>
+          
+        </li>
+        <li class="header__line"></li>
+   
+        <li>
+          <a href="login.html" class="header__login btn">Log in </a>
+        </li>
+      </ul>
+      <button class="header__bars">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </nav>
+  </header>
+      <!-- Mobile Navigation -->
+      <div class="mobile-nav">
+        <nav>
+          <ul class="mobile-nav__menu">
+            <li>
+              <a href="#movies" class="mobile-nav__link">Movies</a>
+            </li>
+            <li>
+              <a href="seat.html" class="mobile-nav__link">Tickets</a>
+            </li>
+            
+            <li class="mobile-nav__link-line"></li>
+   
+            <li>
+              <a href="login.html" class="mobile-nav__btn btn">Login</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- End of Mobile Navigation -->
+      <main>
+        <div class="searching_user">
+          <i  class="bi search_icon  bi-search"></i>
+          <input  type="text" name="search" id="search_input" placeholder="Enter Movie Name ">              
+    </div>
+    <div class="livestream">
+            <a id="ybtn" class="btn " href="live.html"><i class="bi bi-play-fill"></i> Watch Now</a>
+            <a id="ybtn" class="btn" href="live.html"><i class="bi bi-file-earmark-arrow-down-fill"></i> Download</a>
+    </div>
+    <section class="container" id="livestream_text_wrapper">
+      <h1>Eternals</h1>
+      <div style="margin:10px 0px;">
+        <span ><a style="    background-color: var(--clr-light);
+          color: var(--clr-dark);
+          padding: .25em .25em;" href="">Trailer</a></span>
+        <span><a  style="
+          margin: 0px 15px;
+          color: var(--clr-light);
+          border: 2px solid var(--clr-light);
+          padding: .25em .25em;" href="">HD</a></span>
+      </div>
+      <p>The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.</p>
+      <p>IMDB : 8.6</p>
+      <p>Released : November 5, 2021 (USA)</p>
+      <p>Genre : Adventure, Action</p>
+      <p>Duration : 112 min</p>
+      <p>Director: Chloé Zhao</p>
+      <p>Distributed by: Walt Disney Studios Motion Pictures</p>
+      <p>Based on: Eternals; by Jack Kirby</p>
+      <p>Cinematography: Ben Davis</p>
+      <p>Casts : Gemma Chan, Richard Madden, Kumail Nanjiani, Lia McHugh, Brian Tyree Henry, Lauren Ridloff, Barry Keoghan, Don Lee, Kit Harington, Salma Hayek, and Angelina Jolie. </p>
+    </section>
+
+
+
+        <!-- Movies -->
+
+        <section id="movies" class="movies container">
+          <h1 class="movies_title" >Movies</h1>
+          <h2 class="movies_subtitle">Trending & Latest</h2>
+          <div class="cards">
+            <div class="movie_cards_container">
+              
+              </div>
+          </div>
+          <a href="#" style="float:right; margin-top: 20px;" class="btn">See More</a>
+        </section>
+
+        </main>
+     <footer>
+        <ul class="footer_list">
+          <li><a class="footer_link" href=""><i class="bi bi-facebook"></i></a></li>
+          <li><a class="footer_link" href=""><i class="bi bi-twitter"></i></a></li>
+          <li><a class="footer_link" href=""><i class="bi bi-instagram"></i></a></li>
+          <li><a class="footer_link" href=""><i class="bi bi-youtube"></i></a></li>
+        </ul>
+      </footer>
+
+
+      <script src="src/mobile-nav.js"></script>
+      <script src="src/seat.js"></script>
+      <script src="src/latestmovie.js"></script>
+      <script src="src/movies.js"></script>
+      <script src="src/search.js"></script>
+      <script src="src/dark-mode.js"></script>
+</body>
+</html>

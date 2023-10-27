@@ -1,0 +1,143 @@
+.seating{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.seating_title{
+    font-size: var(--size-3xl);
+    color: var(--clr-slate400);
+}
+.movie_container{
+    position: relative;
+    margin: 20px 0;
+}
+.movie_container label{
+    display: inline;
+    color: var(--clr-slate400);
+}
+.movie_container select{
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid var(--clr-light);
+    outline: none;
+    background: var(--clr-slate600);
+    color: var(--clr-light);
+}
+.movie_container select option{
+    background: var(--clr-slate600);
+
+}
+.seat_container{
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+.seat{
+    background-color: var(--clr-slate400);
+    height: 15px;
+    width: 17px;
+    margin: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.selected{
+    background-color: var(--clr-green);
+}
+.sold{
+    background-color: var(--clr-rose);
+}
+.seat:nth-of-type(2){
+    margin-right: 27px;
+}
+.seat:nth-last-of-type(2){
+    margin-left: 27px;
+}
+.seat:not(.sold):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:not(.sold):hover{
+    cursor: default;
+    transform: scale(1);
+}
+.showcase{
+    background: rgba(0,0,0,0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 2px;
+}
+.row{
+    display: flex;
+}
+.screen{
+    background-color: #fff;
+    height: 120px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.3);
+}
+/* 
+p.text{
+    margin: 5px 0;
+}
+p.text span{
+    color: var(--clr-green);
+} */
+
+/* md */
+@media (min-width: 768px) { 
+
+.seat{
+    height: 17px;
+    width: 20px;
+    margin: 7px;
+ }
+}
+/* lg */
+@media (min-width: 1024px) { 
+
+    .seat{
+        height: 20px;
+        width: 22px;
+        margin: 10px;
+    }
+    .seating_title{
+        font-size: var(--size-4xl);
+    }
+ }
+/* xl */
+@media (min-width: 1280px) {  
+    .seating{
+        margin-top: 50px;
+    }
+    .seat{
+        height: 22px;
+        width: 25px;
+        margin: 12px;
+    }
+    .seating_title{
+        font-size: var(--size-5xl);
+    }
+}
+/* 2xl */
+/* @media (min-width: 1536px) {  } */
+
+
+
+

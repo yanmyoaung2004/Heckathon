@@ -1,0 +1,106 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 0;
+}
+
+.login_title{
+    font-size: var(--size-3xl);
+    color: var(--clr-slate400);
+    margin-bottom: 30px;
+}
+.login_form{
+    margin-top: 30px;
+    width: 300px;
+    height: 350px;
+    box-shadow: 4px 10px 25px -8px #303652;
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+
+}
+.login_form label{
+    font-size: var(--size-base);
+    font-weight: 400;
+    color: var(--clr-light);
+}
+.login_form input{
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background:rgb(255,255,255,.2);
+    color: var(--clr-light);
+}
+.input_g{
+    margin: 5px 0px;
+}
+.login_forget{
+    margin: 10px 0pxa;
+    font-weight: 400;
+    font-size: var(--size-sm);
+    margin: 10px 0px;
+    color: var(--clr-light);
+}
+
+/* xs */
+/* @media (min-width: 475px) {  } */
+/* sm */
+@media (min-width: 640px) { 
+    .login_form{
+        width: 400px;
+        height: 480px;
+    }
+
+    .login_form label{
+        font-size: var(--size-base);
+        font-weight: 400;
+        padding: 5px 10px;
+    }
+    .login_form input{
+        width: 300px;
+        height: 30px;
+        padding: 5px 10px;
+        font-size: var(--size-lg);
+    }
+    
+    .login_forget{
+        font-size: var(--size-base);
+        margin: 15px 0px;
+    }
+
+ }
+/* md */
+/* @media (min-width: 768px) {  } */
+/* lg */
+/* @media (min-width: 1024px) {  } */
+/* xl */
+@media (min-width: 1280px) {  
+    .login_form{
+        width: 500px;
+        height: 550px;
+        padding-top: 60px;
+    }
+    .login_form label{
+        font-size: var(--size-lg);
+        font-weight: 400;
+        padding: 5px 10px;
+    }
+    .login_form input{
+        width: 400px;
+        height: 40px;
+        padding: 5px 10px;
+        font-size: var(--size-xl);
+    }
+    
+    .login_forget{
+        font-size: var(--size-lg);
+        margin: 20px 0px;
+    }
+}
+/* 2xl */
+/* @media (min-width: 1536px) {  } */

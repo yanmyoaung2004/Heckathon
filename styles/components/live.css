@@ -1,0 +1,85 @@
+.searching_user input{
+    width: 100%;
+    height: 40px;
+    display: inline;
+    background-color: var(--clr-light );
+}
+.search_icon{
+    padding: .5em .5em; 
+    position: absolute;
+    right: 0;
+    color: var(--clr-dark);
+}
+.livestream{
+    width: 100%;
+    height: 600px;
+    background-color: rebeccapurple;
+    background-image: linear-gradient(rgba(220, 210, 223, 0.3),rgba(173, 169, 169, 0.5)), url('../../img/eternals1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 10px;
+}
+.livestream::before{
+    color: rbga(255,255,255,.5);
+}
+#ybtn{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#livestream_text_wrapper{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+
+
+/* xs */
+/* @media (min-width: 475px) {  } */
+/* sm */
+/* @media (min-width: 640px) {  } */
+/* md */
+@media (min-width: 768px) { 
+    .searching_user {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .searching_user input{
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .search_icon{
+        padding: .5em .5em; 
+        position: absolute;
+        right: 12%;
+        color: var(--clr-dark);
+    }
+    .ybtn{
+        font-size: var(--size-xl);
+        margin-bottom: 25px;
+    }
+
+
+ }
+/* lg */
+@media (min-width: 1024px) { 
+    .searching_user{
+        display: none;
+    }
+    .ybtn{
+        font-size: var(--size-2xl);
+        margin-bottom: 23px;
+    }
+ }
+/* xl */
+/* @media (min-width: 1280px) {  } */
+/* 2xl */
+/* @media (min-width: 1536px) {  } */
+
+
+
+
